@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_photo_"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:id="@+id/Entrance"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:text="@string/entrance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+    />
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="@string/Welcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Entrance"
+    />
+    <TextView
+        android:textSize="12sp"
+        android:id="@+id/registration"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/registration1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Welcome"
+        />
+    <TextView
+        android:textSize="12sp"
+        android:id="@+id/registration2"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registransion2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registration"
+        tools:ignore="SmallSp" />
+
+    <EditText
+        android:paddingStart="15dp"
+        android:textSize="12sp"
+        android:hint="@string/email"
+        android:id="@+id/email"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/edt_background"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="@id/registration"
+        app:layout_constraintStart_toStartOf="@id/registration"
+        app:layout_constraintTop_toBottomOf="@id/registration"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        android:textSize="12sp"
+        android:hint="@string/pasworld"
+        android:id="@+id/password"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edt_background"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="@id/email"
+        app:layout_constraintStart_toStartOf="@id/email"
+        app:layout_constraintTop_toBottomOf="@id/email" />
+
+    <Button
+        android:id="@+id/come"
+        android:textAllCaps="false"
+        android:text="@string/come"
+        android:backgroundTint="@color/grey"
+        android:layout_marginTop="12dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="@id/password"
+        app:layout_constraintStart_toStartOf="@id/password"
+        app:layout_constraintTop_toBottomOf="@id/password"/>
+    <TextView
+        android:layout_marginEnd="70dp"
+        android:textSize="10sp"
+        android:id="@+id/yourPassworld"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ForgotyourPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/come"
+        tools:ignore="SmallSp" />
+
+    <TextView
+
+        android:layout_marginStart="80dp"
+        android:textSize="10sp"
+        android:id="@+id/clicPassworld"
+        android:textStyle="normal"
+        android:textColor="@color/yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clicPAssworld"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/come"
+        tools:ignore="SmallSp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
